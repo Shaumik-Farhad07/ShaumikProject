@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Landing page</title>
+</head>
+
+<body>
+  <!-----------Navbar--------->
+  <div class="bg-white shadow">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li class="font-bold"><a>Home</a></li>
+            <li>About</li>
+            <li><a>Rooms</a></li>
+            <li><a>Blog</a></li>
+            <li><a href="">Page</a></li>
+          </ul>
+        </div>
+        <div class="ml-[289px]">
+          <img class="w-[181px] h-[91px]" src="/project-Assignment-2/pictures/logo.png" />
+        </div>
+      </div>
+      <div class="hidden navbar-center lg:flex">
+        <ul class="px-1 menu menu-horizontal">
+          <li class="font-bold"><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Rooms</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Page</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end mr-[303px]">
+        <p class="m-5">Login/Signup</p>
+
+        <a class="btn w-[127px] h-[52px] bg-[#ceaf83] rounded-[177px]">Reservation</a>
+      </div>
+    </div>
+  </div>
+
+  <!---------carousel section--------->
+  <div class="relative w-full max-w-screen-xl mx-auto bg-white">
+    <!-- Header Text and Description Section -->
+    <div class="absolute top-0 left-0 z-10 px-8 py-10">
+      <div class="w-[768px]">
+        <span class="text-black text-[90px] font-normal leading-[82px]" style="font-family: 'Playfair Display'">
+          Find the top <span>Hotels nearby</span>
+        </span>
+        <span class="text-[#ceaf83] text-[90px] font-normal leading-[82px]" style="font-family: 'Playfair Display'">
+
+        </span>
+      </div>
+
+      <div class="w-[772px] text-[#4d4d4d] text-lg font-medium font-['Urbanist'] leading-[23px] mt-[24px]">
+        Looking for a comfortable and convenient place to call home? Our house
+        rental offers spacious living areas, modern amenities, and a prime
+        location. Featuring multiple bedrooms, updated kitchens, and cozy
+        living spaces, it's perfect for families or professionals.
+      </div>
+
+      <!-- Hotel Type Navigation -->
+      <div class="w-[588.50px] h-[19px] relative mt-[44px]">
+        <div
+          class="left-[1px] top-0 absolute text-center text-[#4d4d4d] text-base font-medium font-['Urbanist'] leading-tight">
+          Vila
+        </div>
+        <div class="w-[0.50px] h-[19px] left-[93px] top-0 absolute opacity-40 bg-white"></div>
+        <div
+          class="left-[158.50px] top-0 absolute text-center text-[#4d4d4d] text-base font-medium font-['Urbanist'] leading-tight">
+          Family House
+        </div>
+        <div class="w-[0.50px] h-[19px] left-[316.50px] top-0 absolute opacity-40 bg-white"></div>
+        <div
+          class="left-[382px] top-0 absolute text-center text-[#4d4d4d] text-base font-medium font-['Urbanist'] leading-tight">
+          Hotel
+        </div>
+        <div class="w-[0.50px] h-[19px] left-[483px] top-0 absolute opacity-40 bg-white"></div>
+        <div
+          class="left-[547.50px] top-0 absolute text-center text-[#4d4d4d] text-base font-medium font-['Urbanist'] leading-tight">
+          Room
+        </div>
+      </div>
+      <!-- Navigation Links -->
+      <div class="flex space-x-4 mt-[44px] mr-[636px]">
+        <div class="h-[52px] justify-start items-start inline-flex">
+          <div class="px-[26px] py-[15px] bg-[#eee5d8] rounded-[30px] justify-start items-start gap-2.5 flex">
+            <div class="text-[#ceaf83] text-sm font-bold font-['Urbanist'] leading-snug">
+              Discover now
+            </div>
+          </div>
+        </div>
+        <button class="flex items-center space-x-2">
+          <span class="w-4 h-4 bg-black rounded-full"></span>
+          <!-- Circle icon -->
+          <span class="text-black">Watch our story</span>
+        </button>
+      </div>
+
+      <!-- Check Availability Section -->
+      <div class="relative mt-[92px]">
+        <div class="text-black text-lg font-normal font-['Playfair Display'] leading-[23px]">
+          Check Availability
+        </div>
+        <div class="absolute w-[502px] h-[113px] flex justify-center pb-8 mt-[22px] ml-[283px]">
+          <div class="bg-white shadow-lg p-6 rounded-full flex space-x-2==">
+            <div class="flex flex-row">
+              <div>
+                <label class="text-gray-500">Check In</label>
+                <input type="text" placeholder="Add dates" class="" />
+              </div>
+              <div>
+                <div class="w-[55px] h-[0px] origin-top-left rotate-90 border border-[#cacaca]"></div>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div>
+                <label class="text-gray-500">Check Out</label>
+                <input type="text" placeholder="Add dates" class="" />
+              </div>
+              <div>
+                <div class="w-[55px] h-[0px] origin-top-left rotate-90 border border-[#cacaca]"></div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label class="text-gray-500">Adults</label>
+              <input type="text" placeholder="Add Adults" class="" />
+            </div>
+            <div class="flex flex-col">
+              <label class="text-gray-500">Children</label>
+              <input type="text" placeholder="Add Children" class="" />
+            </div>
+            <div class="flex flex-col">
+              <label class="text-gray-500">Room's</label>
+              <input type="text" placeholder="Add Rooms" class="" />
+            </div>
+            <button class="w-[50px] h-[40px] bg-[#ceaf83] text-white py-2 px-4 rounded-full flex items-center">
+              <img src="/project-Assignment-2/pictures/Search.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Image Section -->
+    <div class="relative w-[536px] h-[734px] ml-[803px] mt-[133px] mr-[303px]">
+      <!-- Main image -->
+      <img src="/project-Assignment-2/pictures/Frame 4887.png" alt="Building" class="object-cover w-full h-full rounded-lg" />
+
+      <!-- Top-left circular overlay image -->
+      <div
+        class="absolute top-[-20px] left-[-20px] border-4 border-white rounded-full overflow-hidden w-[80px] h-[80px]">
+        <img src="/project-Assignment-2/pictures/Ellipse house1.png" alt="Top Left Image" class="object-cover w-full h-full" />
+      </div>
+
+      <!-- Middle-right circular overlay image -->
+      <div
+        class="absolute top-[50%] right-[-40px] border-4 border-white rounded-full overflow-hidden w-[100px] h-[100px]">
+        <img src="/project-Assignment-2/pictures/houese2.png" alt="Middle Right Image" class="object-cover w-full h-full" />
+      </div>
+    </div>
+  </div>
+
+  <!-------carousel End---------->
+  <!-------Discover section-->
+  <div class="mt-[150px] bg-white">
+    <div class="w-[1920px] h-[0px]  border border-[#cacaca]"></div>
+    <div class="w-[1920px] h-[1345px] relative">
+      <img class="w-[1920px] h-[1345px] left-0 top-0 absolute" src="/project-Assignment-2/pictures/bg-image.png" />
+      <div class="w-[1302.46px] left-[309px] top-[72px] absolute">
+        <div
+          class="w-[652.24px] left-0 top-0 absolute text-black text-[32px] font-bold font-['Playfair Display'] leading-[46px]">
+          Discover Homeya's Finest Properties For Your Dream Home</div>
+        <div
+          class="w-[625.06px] left-[677.40px] top-[23px] absolute text-[#4d4d4d] text-base font-medium font-['Urbanist'] leading-[23px]">
+          All three of Rooms Hotels locations are restorations that translate historic locations into places of
+          contemporary comfort. Industrial architecture, salvaged building materials and the unique approach</div>
+      </div>
+      <div class="w-[1320px] h-[927px] left-[300px] top-[230px] absolute">
+        <div class="w-[784px] h-[459px] left-0 top-0 absolute">
+          <img class="w-[784px] h-[458px] left-0 top-0 absolute rounded-[10px]" src="/project-Assignment-2/pictures/deluxe.png" />
+          <div class="w-[784px] h-[230px] left-0 top-[229px] absolute "></div>
+          <div
+            class="w-[439px] left-[38px] top-[344px] absolute text-white text-[32px] font-bold font-['Playfair Display'] leading-normal">
+            Deluxe Double Room</div>
+          <div class="w-[266px] h-6 left-[38px] top-[393px] absolute">
+            <div class="left-0 top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">500
+              Sqft</div>
+            <div class="left-[100px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              3-4 guests</div>
+            <div class="left-[206px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              Free Wi-fi</div>
+            <div class="w-2.5 h-[0px] left-[74px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+            <div class="w-2.5 h-[0px] left-[184px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+          </div>
+          <div class="w-[158px] h-[42px] left-[593px] top-[38px] absolute">
+            <div class="w-[158px] h-[42px] left-0 top-0 absolute bg-white rounded-[10px]"></div>
+            <div class="w-[113.07px] h-[23px] left-[24px] top-[9px] absolute">
+              <div
+                class="w-[75.72px] left-0 top-0 absolute text-[#ceaf83] text-2xl font-semibold font-['Playfair Display'] leading-snug">
+                $62,00</div>
+              <div
+                class="w-[35.34px] left-[77.74px] top-[8px] absolute text-[#ceaf83] text-base font-medium font-['Urbanist'] leading-3">
+                /Day</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[424px] h-[445px] left-[896px] top-[482px] absolute">
+          <img class="w-[424px] h-[445px] left-0 top-0 absolute rounded-[10px]" src="/project-Assignment-2/pictures/deluxe4.png" />
+          <div class="w-[424px] h-[230px] left-0 top-[215px] absolute"></div>
+          <div
+            class="w-[253px] left-[22px] top-[349px] absolute text-white text-[32px] font-bold font-['Playfair Display'] leading-normal">
+            Hill View Suite</div>
+          <div class="w-[266px] h-6 left-[22px] top-[398px] absolute">
+            <div class="left-0 top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">500
+              Sqft</div>
+            <div class="left-[100px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              3-4 guests</div>
+            <div class="left-[206px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              Free Wi-fi</div>
+            <div class="w-2.5 h-[0px] left-[74px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+            <div class="w-2.5 h-[0px] left-[184px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+          </div>
+          <div class="w-[158px] h-[42px] left-[238px] top-[30px] absolute">
+            <div class="w-[158px] h-[42px] left-0 top-0 absolute bg-white rounded-[10px]"></div>
+            <div class="w-[113.07px] h-[23px] left-[24px] top-[9px] absolute">
+              <div
+                class="w-[75.72px] left-0 top-0 absolute text-[#ceaf83] text-2xl font-semibold font-['Urbanist'] leading-snug">
+                $62,00</div>
+              <div
+                class="w-[35.34px] left-[77.74px] top-[8px] absolute text-[#ceaf83] text-base font-medium font-['Urbanist'] leading-3">
+                /Day</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[424px] h-[445px] left-[448px] top-[482px] absolute">
+          <img class="w-[424px] h-[445px] left-0 top-0 absolute rounded-[10px]" src="/project-Assignment-2/pictures/deluxe3.png" />
+          <div class="w-[424px] h-[230px] left-0 top-[215px] absolute "></div>
+          <div
+            class="w-[253px] left-[22px] top-[349px] absolute text-white text-[32px] font-bold font-['Playfair Display'] leading-normal">
+            Hill View Suite</div>
+          <div class="w-[266px] h-6 left-[22px] top-[398px] absolute">
+            <div class="left-0 top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">500
+              Sqft</div>
+            <div class="left-[100px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              3-4 guests</div>
+            <div class="left-[206px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              Free Wi-fi</div>
+            <div class="w-2.5 h-[0px] left-[74px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+            <div class="w-2.5 h-[0px] left-[184px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+          </div>
+          <div class="w-[158px] h-[42px] left-[245px] top-[30px] absolute">
+            <div class="w-[158px] h-[42px] left-0 top-0 absolute bg-white rounded-[10px]"></div>
+            <div class="w-[113.07px] h-[23px] left-[24px] top-[9px] absolute">
+              <div
+                class="w-[75.72px] left-0 top-0 absolute text-[#ceaf83] text-2xl font-semibold font-['Urbanist'] leading-snug">
+                $62,00</div>
+              <div
+                class="w-[35.34px] left-[77.74px] top-[8px] absolute text-[#ceaf83] text-base font-medium font-['Urbanist'] leading-3">
+                /Day</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[424px] h-[445px] left-0 top-[482px] absolute">
+          <img class="w-[424px] h-[445px] left-0 top-0 absolute rounded-[10px]" src="/project-Assignment-2/pictures/deluxe2.jpg" />
+          <div class="w-[424px] h-[230px] left-0 top-[215px] absolute "></div>
+          <div
+            class="w-[253px] left-[22px] top-[349px] absolute text-white text-[32px] font-bold font-['Playfair Display'] leading-normal">
+            Hill View Suite</div>
+          <div class="w-[266px] h-6 left-[22px] top-[398px] absolute">
+            <div class="left-0 top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">500
+              Sqft</div>
+            <div class="left-[100px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              3-4 guests</div>
+            <div class="left-[206px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              Free Wi-fi</div>
+            <div class="w-2.5 h-[0px] left-[74px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+            <div class="w-2.5 h-[0px] left-[184px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+          </div>
+          <div class="w-[158px] h-[42px] left-[222px] top-[30px] absolute">
+            <div class="w-[158px] h-[42px] left-0 top-0 absolute bg-white rounded-[10px]"></div>
+            <div class="w-[113.07px] h-[23px] left-[24px] top-[9px] absolute">
+              <div
+                class="w-[75.72px] left-0 top-0 absolute text-[#ceaf83] text-2xl font-semibold font-['Playfair Display'] leading-snug">
+                $62,00</div>
+              <div
+                class="w-[35.34px] left-[77.74px] top-[8px] absolute text-[#ceaf83] text-base font-medium font-['Urbanist'] leading-3">
+                /Day</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[515px] h-[459px] left-[804px] top-0 absolute">
+          <img class="w-[515px] h-[458px] left-0 top-0 absolute rounded-[10px]" src="/project-Assignment-2/pictures/deluxe1.png" />
+          <div class="w-[514px] h-[230px] left-[1px] top-[229px] absolute "></div>
+          <div class="w-[158px] h-[42px] left-[330px] top-[38px] absolute">
+            <div class="w-[158px] h-[42px] left-0 top-0 absolute bg-white rounded-[10px]"></div>
+            <div class="w-[113.07px] h-[23px] left-[24px] top-[9px] absolute">
+              <div
+                class="w-[75.72px] left-0 top-0 absolute text-[#ceaf83] text-2xl font-semibold font-['Playfair Display'] leading-snug">
+                $62,00</div>
+              <div
+                class="w-[35.34px] left-[77.74px] top-[8px] absolute text-[#ceaf83] text-base font-medium font-['Urbanist'] leading-3">
+                /Day</div>
+            </div>
+          </div>
+          <div
+            class="w-[439px] left-[40px] top-[344px] absolute text-[#ceaf83] text-[32px] font-bold font-['Playfair Display'] leading-normal">
+            Deluxe Double Room</div>
+          <div class="w-[266px] h-6 left-[40px] top-[393px] absolute">
+            <div class="left-0 top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">500
+              Sqft</div>
+            <div class="left-[100px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              3-4 guests</div>
+            <div class="left-[206px] top-0 absolute text-white text-sm font-semibold font-['Urbanist'] leading-normal">
+              Free Wi-fi</div>
+            <div class="w-2.5 h-[0px] left-[74px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+            <div class="w-2.5 h-[0px] left-[184px] top-[7px] absolute origin-top-left rotate-90 border border-white">
+            </div>
+          </div>
+          <div class="w-96 h-[0px] left-[44px] top-[376px] absolute border-2 border-[#ceaf83]"></div>
+        </div>
+      </div>
+      <div class="w-[141.34px] h-[52px] left-[889px] top-[1209px] absolute">
+        <div class="w-[141.34px] h-[52px] left-0 top-0 absolute bg-[#ceaf83] rounded-[177px]">
+          <div class="w-[53.51px] left-[26.25px] top-[16px] absolute text-white text-sm font-bold font-['Urbanist'] leading-snug flex">view all
+          </div>
+          <img class="ml-[95px] mt-[16px]" src="/project-Assignment-2/pictures/arrow.png" alt="">
+        </div>
+        
+        <div
+          class="w-[24.23px] h-6 left-[120.14px] top-[39px] absolute origin-top-left -rotate-180 flex-col justify-start items-start inline-flex">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!---------Discover section End-------->
+  <!-------REview section------------->
+  <section class="flex ">
+    <div>
+      <div class="w-[948px] h-[471px] bg-[#1c1b1f]">
+        <div
+          class="w-[666px] text-white text-5xl font-bold font-['Playfair Display'] leading-[56px] ml-[301px] pt-[141px]">
+          Rave Reviews from Our Satisfied Guests</div>
+        <div class="flex ml-[300px]">
+          <div class="w-10 h-10 bg-white rounded-full mt-[37px]">
+            <img class="pt-2 pl-2" src="/project-Assignment-2/pictures/arrow left.png" alt="">
+          </div>
+          <div class="w-2.5 h-2.5 bg-[#ceaf83] rounded-full mt-[52px] ml-[39px]"></div>
+          <div class="w-2.5 h-2.5 bg-white rounded-full mt-[52px] ml-[7px]"></div>
+          <div class="w-2.5 h-2.5 bg-white rounded-full mt-[52px] ml-[7px]"></div>
+          <div class="w-10 h-10 bg-[#ceaf83] rounded-full mt-[37px] ml-[39px]">
+            <img class="pt-2 pl-3" src="/project-Assignment-2/pictures/arrow.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[972px] h-[471px] bg-[#fff9f6] flex">
+      <div class="w-[435px] h-[290px] bg-white rounded-[20px] border border-[#cacaca] ml-[42px] mt-[108px]">
+        <div class="mt-[35px] ml-[26px] flex">
+          <div>
+            <img src="/project-Assignment-2/pictures/aman.png" alt="">
+          </div>
+          <div class="ml-[17px]  mt-[7px]">
+            <div class="w-[107px] h-[18.65px] text-black text-lg font-bold font-['Urbanist'] leading-tight">Arman </div>
+            <div class="w-[162px] h-[18.65px] text-[#4d4d4d] text-lg font-normal font-['Urbanist'] leading-tight">
+              Webflow Developer</div>
+          </div>
+
+        </div>
+        <div class="w-[400px] h-[104.44px] text-[#4d4d4d] text-lg font-semibold font-['Urbanist'] leading-[30px] ml-[22px] mt-[20px]">
+          Amazing design, easy to customize and a design quality superlative account on its cloud platform for the
+          optimized performance. And we didn't on our original designs.
+        </div>
+        <div class="ml-[32px] flex mt-[25px]">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+        </div>
+
+      </div>
+      <div class="w-[435px] h-[290px] bg-white rounded-[20px] border border-[#cacaca] ml-[30px] mt-[108px]">
+        <div class="mt-[35px] ml-[36px] flex">
+          <div>
+            <img src="/project-Assignment-2/pictures/arman.png" alt="">
+          </div>
+          <div class="ml-[17px]  mt-[7px]">
+            <div class="w-[107px] h-[18.65px] text-black text-lg font-bold font-['Urbanist'] leading-tight">Arman </div>
+            <div class="w-[162px] h-[18.65px] text-[#4d4d4d] text-lg font-normal font-['Urbanist'] leading-tight">
+              Webflow Developer</div>
+          </div>
+
+        </div>
+        <div class="w-[400px] h-[104.44px] text-[#4d4d4d] text-lg font-semibold font-['Urbanist'] leading-[30px] ml-[32px] mt-[20px]">
+          Amazing design, easy to customize and a design quality superlative account on its cloud platform for the
+          optimized performance. And we didn't on our original designs.
+        </div>
+        <div class="ml-[32px] flex mt-[25px]">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+          <img src="/project-Assignment-2/pictures/Vector-star.png" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-------review section end---------->
+  <!-------Footer------->
+  <section class="">
+    <footer class="relative footer bg-base-200 text-base-content p-10 w-[1921px] h-[421px]">
+      <aside>
+        <img class="absolute w-[509px] h-[368px]" src="/project-Assignment-2/pictures/BG Image-footer.png" />
+        <img class="w-[181px] h-[91px] ml-[307px] mt-[54px]" src="/logo.png" />
+        <div class="text-black text-[22px] font-medium font-['Urbanist'] leading-[34px] ml-[307px] mt-[39px]">Follow us on social media</div>
+        <img class="ml-[307px] mt-[22px]" src="/project-Assignment-2/pictures/social.png" alt="">
+          
+      
+      </aside>
+     
+      <nav class="mt-[108px]">
+        <div class="text-black text-[22px] font-bold font-['Playfair Display'] leading-[34px]">Quick Links</div>
+        <div class="text-black text-base font-medium font-['Urbanist'] leading-normal">Abut us</div>
+        <div class="text-black text-base font-medium font-['Urbanist'] leading-normal">Our Service</div>
+        <div class="text-black text-base font-medium font-['Urbanist'] leading-normal">Our Blog’s</div>
+        <div class="text-black text-base font-medium font-['Urbanist'] leading-normal">Contact</div>
+      </nav>
+      <nav class="mt-[108px]">
+        <div class="text-black text-[22px] font-bold font-['Playfair Display'] leading-[34px]">Appointment</div>
+        <div class="w-[212px] h-[2.10px] text-black text-base font-medium font-['Urbanist'] leading-normal">Web Design and development</div>
+        <div class="text-black text-base font-medium font-['Urbanist'] leading-normal mt-[24px]">UI UX Service</div>
+        <div class="text-black text-base font-medium font-['Urbanist'] leading-normal">Digital marketing</div>
+        <div class="text-black text-base font-medium font-['Urbanist'] leading-normal">Digital marketing</div>
+      </nav>
+      <nav class="mt-[108px]">
+        <div class="text-black text-[22px] font-bold font-['Playfair Display'] leading-[34px]">Contact Info</div>
+        <div class="flex">
+          <div>
+            <img class="mr-[12px]" src="/project-Assignment-2/pictures/mail.png" alt="">
+          </div>
+          <div>
+            <div class="text-black text-lg font-normal font-['Open Sans'] leading-[18px]">Email</div>
+            <div class="text-black text-base font-normal font-['Open Sans'] leading-none">hunkcyAgencyUI@gamil.com</div>
+          </div>
+        </div>
+        <div>
+          <div class="flex">
+            <div>
+              <img class="mr-[12px]" src="/project-Assignment-2/pictures/location.png" alt="">
+            </div>
+            <div>
+              <div class="text-black text-lg font-normal font-['Open Sans'] leading-[18px]">Location</div>
+              <div class="w-[258px] text-black text-base font-normal font-['Open Sans'] leading-tight">302/1, Hazi Tower, Gandaria New Rd, Dhaka 1204</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    </footer>
+    <footer class="items-center p-4 footer bg-neutral text-neutral-content">
+      <div class=" ml-[266px] w-[347px] h-[34px] text-white text-lg font-semibold font-['Urbanist'] leading-[34px]">©2024 Bookky | All Rights Reserved.</div>
+      <div class="w-[136px] h-[34px] text-white text-lg font-semibold font-['Urbanist'] ml-[683px]">Trems of service</div>
+      <div class="w-28 h-[34px] text-white text-lg font-semibold font-['Urbanist'] mr-[300px]">privacy policy</div>
+      
+      
+    </footer>
+  </section>
+  <!-------Footer End------->
+
+</body>
+
+</html>
